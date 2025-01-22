@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Shabnam";
+    src: 
+    url("fonts/Shabnam-FD.woff2") format("woff2");
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 14px;
+}
+
+body{
+    font-family: "Shabnam";
+}
+
+.container{
+    width: 1216px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 56px;
+}
+.section-head{
+    display: flex;
+    /* برای اینکه یکی بره چپ و یکی بره راست */
+    justify-content: space-between; 
+    margin-bottom: 24px;
+}
+.section__title{
+    /* باهم یجا قرار بگیرن */
+    display: flex;
+    /* تراز شدن */
+    align-items: center;
+    gap: 6px;
+}
+.section__title-icon{
+    width: 22px;
+    height: 22px;
+    color: #1E88E5;
+}
+.section__link{
+    color: #1E88E5;
+    /* خط لینک رو برداریم */
+    text-decoration: none;
+}
+
+.row{
+    display: flex;
+    gap: 24px;
+}
+.product{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    padding: 24px;
+}
+.product__image{
+    width: 100%;
+}
+.product__name{
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 14px;
+    line-height: 1.6;
+    /* هرچقدر هم خط داشت ماکس ارتفاع انقدر باشه */
+    height: 68px;
+}
+.product__link{
+    text-decoration: none;
+    color: #212121;
+
+}
+.product__offer{
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    gap: 8px;
+    margin-top: 12px;
+}
+.product__offer-percent{
+    background-color: #E3F2FD;
+    color: #1976D2;
+    font-weight: bold;
+    padding: 2px 4px;
+    display: inline-block;
+    border-radius: 4px;
+}
+.product__offer-price{
+    text-decoration: line-through;
+    color: #546E7A;
+}
+.product__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+}
+.product__price{
+    display: flex;
+    align-items: center;
+    gap:4px;
+}
+.product__price-number{
+    font-weight: bold;
+    font-size: 18px;
+}
+.product__price-unit{
+    font-size: 14px;
+}
+.product__rating{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.product__rating-number{
+    font-size: 14px;
+    color: #546E7A;
+}
+.product__rating-icon{
+    width: 18px;
+    height: 18px;
+    color: #f1c21b;
+}
